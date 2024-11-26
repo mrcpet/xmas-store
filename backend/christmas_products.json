@@ -5,7 +5,7 @@
       "title": "Red Christmas Ornaments (Set of 24)",
       "image": "http://localhost:5020/img/1.jpg",
       "price": 19.99,
-      "balance": 150,
+      "quantity": 150,
       "in_stock": true,
       "description": "Beautiful red ornaments to make your Christmas tree sparkle."
     },
@@ -14,7 +14,7 @@
       "title": "LED String Lights (Warm White, 50ft)",
       "image": "http://localhost:5020/img/2.jpg",
       "price": 29.99,
-      "balance": 50,
+      "quantity": 50,
       "in_stock": true,
       "description": "Energy-efficient LED string lights for indoor and outdoor decoration."
     },
@@ -23,7 +23,7 @@
       "title": "Artificial Christmas Tree (6ft)",
       "image": "http://localhost:5020/img/3.jpg",
       "price": 79.99,
-      "balance": 20,
+      "quantity": 20,
       "in_stock": true,
       "description": "A premium-quality artificial Christmas tree with a natural look."
     },
@@ -32,7 +32,7 @@
       "title": "Santa Claus Figurine (12in)",
       "image": "http://localhost:5020/img/4.jpg",
       "price": 15.99,
-      "balance": 80,
+      "quantity": 80,
       "in_stock": true,
       "description": "Charming Santa figurine to bring holiday cheer to any room."
     },
@@ -41,7 +41,7 @@
       "title": "Christmas Wreath (24in)",
       "image": "http://localhost:5020/img/5.jpg",
       "price": 25.99,
-      "balance": 0,
+      "quantity": 0,
       "in_stock": false,
       "description": "Lush Christmas wreath made with pinecones and berries."
     },
@@ -50,7 +50,7 @@
       "title": "Snowflake Window Clings",
       "image": "http://localhost:5020/img/6.jpg",
       "price": 9.99,
-      "balance": 200,
+      "quantity": 200,
       "in_stock": true,
       "description": "Reusable snowflake clings to decorate your windows."
     },
@@ -59,7 +59,7 @@
       "title": "Tabletop Christmas Tree (2ft)",
       "image": "http://localhost:5020/img/7.jpg",
       "price": 19.99,
-      "balance": 30,
+      "quantity": 30,
       "in_stock": true,
       "description": "Mini Christmas tree, perfect for small spaces or tabletops."
     },
@@ -68,7 +68,7 @@
       "title": "Christmas Stockings (Set of 4)",
       "image": "http://localhost:5020/img/8.jpg",
       "price": 17.99,
-      "balance": 100,
+      "quantity": 100,
       "in_stock": true,
       "description": "Festive stockings to hang by the fireplace or on the wall."
     },
@@ -77,7 +77,7 @@
       "title": "Outdoor Inflatable Snowman",
       "image": "http://localhost:5020/img/9.jpg",
       "price": 49.99,
-      "balance": 10,
+      "quantity": 10,
       "in_stock": true,
       "description": "Bright and cheerful inflatable snowman for your yard."
     },
@@ -86,7 +86,7 @@
       "title": "Battery-Operated Candle Lights",
       "image": "http://localhost:5020/img/10.jpg",
       "price": 14.99,
-      "balance": 60,
+      "quantity": 60,
       "in_stock": true,
       "description": "Flameless candles for a safe and cozy Christmas ambiance."
     },
@@ -95,7 +95,7 @@
       "title": "Christmas Tree Skirt (Red and White)",
       "image": "http://localhost:5020/img/11.jpg",
       "price": 12.99,
-      "balance": 40,
+      "quantity": 40,
       "in_stock": true,
       "description": "Soft and elegant skirt to complete the look of your Christmas tree."
     },
@@ -104,7 +104,7 @@
       "title": "Nutcracker Figurine (15in)",
       "image": "http://localhost:5020/img/12.jpg",
       "price": 22.99,
-      "balance": 0,
+      "quantity": 0,
       "in_stock": false,
       "description": "Classic nutcracker to add a touch of tradition to your decor."
     },
@@ -113,7 +113,7 @@
       "title": "Holiday Gift Wrap (5 Rolls)",
       "image": "http://localhost:5020/img/13.jpg",
       "price": 11.99,
-      "balance": 120,
+      "quantity": 120,
       "in_stock": true,
       "description": "Festive wrapping paper in a variety of designs."
     },
@@ -122,7 +122,7 @@
       "title": "Christmas Garland with Lights (9ft)",
       "image": "http://localhost:5020/img/14.jpg",
       "price": 34.99,
-      "balance": 15,
+      "quantity": 15,
       "in_stock": true,
       "description": "Lighted garland to decorate mantels, staircases, or doorways."
     },
@@ -131,7 +131,7 @@
       "title": "Winter Wonderland Doormat",
       "image": "http://localhost:5020/img/15.jpg",
       "price": 16.99,
-      "balance": 70,
+      "quantity": 70,
       "in_stock": true,
       "description": "A festive doormat to welcome guests into your home."
     },
@@ -140,7 +140,7 @@
       "title": "Holiday Centerpiece with Candles",
       "image": "http://localhost:5020/img/16.jpg",
       "price": 29.99,
-      "balance": 5,
+      "quantity": 5,
       "in_stock": true,
       "description": "Elegant centerpiece with candles and pine accents for your table."
     },
@@ -149,7 +149,7 @@
       "title": "Elf on the Shelf",
       "image": "http://localhost:5020/img/17.jpg",
       "price": 24.99,
-      "balance": 200,
+      "quantity": 200,
       "in_stock": true,
       "description": "Fun elf figurine to create holiday mischief in your home."
     },
@@ -158,7 +158,7 @@
       "title": "Christmas Cookie Cutters (Set of 10)",
       "image": "http://localhost:5020/img/18.jpg",
       "price": 8.99,
-      "balance": 90,
+      "quantity": 90,
       "in_stock": true,
       "description": "Assorted cookie cutters for making holiday treats."
     },
@@ -167,7 +167,7 @@
       "title": "Pre-Lit Mini Christmas Tree (3ft)",
       "image": "http://localhost:5020/img/19.jpg",
       "price": 27.99,
-      "balance": 0,
+      "quantity": 0,
       "in_stock": false,
       "description": "Compact pre-lit tree, ideal for small spaces."
     },
@@ -176,7 +176,7 @@
       "title": "Reindeer Lawn Decorations (Set of 3)",
       "image": "http://localhost:5020/img/20.jpg",
       "price": 45.99,
-      "balance": 8,
+      "quantity": 8,
       "in_stock": true,
       "description": "Lighted reindeer figures to adorn your yard."
     },
@@ -185,7 +185,7 @@
       "title": "Christmas Tree Topper (Star)",
       "image": "http://localhost:5020/img/21.jpg",
       "price": 14.99,
-      "balance": 50,
+      "quantity": 50,
       "in_stock": true,
       "description": "Gold star topper to crown your Christmas tree beautifully."
     },
@@ -194,7 +194,7 @@
       "title": "Holiday Scented Candles (Set of 3)",
       "image": "http://localhost:5020/img/22.jpg",
       "price": 18.99,
-      "balance": 70,
+      "quantity": 70,
       "in_stock": true,
       "description": "Candles with festive scents like cinnamon and pine."
     },
@@ -203,7 +203,7 @@
       "title": "Plush Christmas Throw Blanket",
       "image": "http://localhost:5020/img/23.jpg",
       "price": 19.99,
-      "balance": 25,
+      "quantity": 25,
       "in_stock": true,
       "description": "Soft and cozy blanket with holiday patterns."
     },
@@ -212,7 +212,7 @@
       "title": "Christmas Village Set",
       "image": "http://localhost:5020/img/24.jpg",
       "price": 49.99,
-      "balance": 10,
+      "quantity": 10,
       "in_stock": true,
       "description": "Detailed Christmas village figurines to create a festive scene."
     },
@@ -221,7 +221,7 @@
       "title": "Holiday-Themed Dinnerware (Set of 4)",
       "image": "http://localhost:5020/img/25.jpg",
       "price": 39.99,
-      "balance": 12,
+      "quantity": 12,
       "in_stock": true,
       "description": "Dinnerware with festive holiday designs for your table."
     }

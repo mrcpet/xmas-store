@@ -8,9 +8,9 @@ export class ProductsModel {
 }
 
 export class DetailsModel extends ProductsModel {
-  constructor(id, title, image, price, balance, in_stock, description) {
+  constructor(id, title, image, price, quantity, in_stock, description) {
     super(id, title, image, price);
-    this.balance = balance;
+    this.quantity = quantity;
     this.in_stock = in_stock;
     this.description = description;
   }

@@ -26,7 +26,7 @@ export const findProduct = async (req, res) => {
         result.title,
         result.image,
         result.price,
-        result.balance,
+        result.quantity,
         result.in_stock,
         result.description
       );
