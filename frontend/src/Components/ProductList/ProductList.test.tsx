@@ -9,13 +9,9 @@ describe("Product list component", () => {
   beforeEach(() => {
     render(<ProductList products={testData} />);
   });
-  it("should render a list with more than 2 items", async () => {
+  it("should render a list with at least 2 items", async () => {
     const list = await screen.findByRole("list");
     await waitFor(() => expect(list.children.length).toBeGreaterThanOrEqual(2));
-  });
-  it("should show a picture for each item", async () => {
-    const images = await screen.findAllByRole("img");
-    expect(images).toHaveLength(2);
   });
   it("should show a title for each item", async () => {
     const title = await screen.findAllByRole("heading");
@@ -25,6 +21,10 @@ describe("Product list component", () => {
     expect(screen.getByText("Price: $19.99")).toBeInTheDocument();
     expect(screen.getByText("Price: $29.99")).toBeInTheDocument();
   });
+  it("should show a picture for each item", async () => {
+    const images = await screen.findAllByRole("img");
+    expect(images).toHaveLength(2);
+  });
 });
 
 const testData: IProduct[] = [
@@ -33,18 +33,11 @@ const testData: IProduct[] = [
     title: "Red Christmas Ornaments (Set of 24)",
     image: "http://localhost:5020/img/1.jpg",
     price: 19.99,
-    quantity: 150,
-    in_stock: true,
-    description: "Beautiful red ornaments to make your Christmas tree sparkle.",
   },
   {
     id: 2,
     title: "LED String Lights (Warm White, 50ft)",
     image: "http://localhost:5020/img/2.jpg",
     price: 29.99,
-    quantity: 50,
-    in_stock: true,
-    description:
-      "Energy-efficient LED string lights for indoor and outdoor decoration.",
   },
 ];

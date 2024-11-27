@@ -4,7 +4,7 @@ import { render, screen, waitFor } from "@testing-library/react";
 
 import App from "./App";
 
-describe("App component", () => {
+describe.skip("App component", () => {
   beforeEach(() => {
     render(<App />);
   });
@@ -17,3 +17,5 @@ describe("App component", () => {
     await waitFor(() => expect(list.children.length).toBeGreaterThanOrEqual(2));
   });
 });
+
+//TODO remove this test suite, it was just used in the start to make sure the vitest framework was installed correctly
