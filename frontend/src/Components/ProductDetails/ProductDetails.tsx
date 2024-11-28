@@ -1,4 +1,5 @@
 import { IProductDetails } from "../../Models/IProductDetails";
+import AddToCartButton from "../AddToCartButton/AddToCartButton";
 
 const ProductDetails = ({ product }: { product: IProductDetails }) => {
   return (
@@ -8,6 +9,11 @@ const ProductDetails = ({ product }: { product: IProductDetails }) => {
       <p>{product.description}</p>
       <p>Price: ${product.price}</p>
       <p>Quantity: {product.quantity}</p>
+      {product.quantity > 0 ? (
+        <AddToCartButton product={product} />
+      ) : (
+        <p>Currently unavailable</p>
+      )}
     </>
   );
 };

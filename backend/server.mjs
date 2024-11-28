@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
+import { corsOptions } from "./config.mjs";
 import products from "./routes/products-routes.mjs";
 import cart from "./routes/cart-routes.mjs";
 
@@ -11,7 +12,7 @@ dotenv.config();
 const PORT = process.env.PORT || 5001;
 
 app.use(express.json());
-app.use(cors());
+app.use(cors(corsOptions));
 app.use("/api/products", products);
 app.use("/api/cart", cart);
 

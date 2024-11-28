@@ -1,5 +1,7 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 
 const Navigation = () => {
   return (
@@ -12,6 +14,11 @@ const Navigation = () => {
         </li>
         <li>
           <NavLink to="/products">Products</NavLink>
+        </li>
+        <li>
+          <NavLink to="/cart">
+            <FontAwesomeIcon icon={faShoppingCart} />
+          </NavLink>
         </li>
       </StyledNavList>
     </nav>
