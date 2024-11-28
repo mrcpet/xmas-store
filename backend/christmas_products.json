@@ -225,5 +225,13 @@
       "in_stock": true,
       "description": "Dinnerware with festive holiday designs for your table."
     }
+  ],
+  "cart": [
+    {
+      "id": 5000,
+      "title": "test item",
+      "image": "www.testimage.com",
+      "price": 1234
+    }
   ]
 }

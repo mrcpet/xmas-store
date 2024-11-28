@@ -14,3 +14,16 @@ export const fetchData = async (endpoint) => {
     );
   }
 };
+
+export const postData = async (endpoint, body) => {
+  let url = `${process.env.BASE_URL}/${endpoint}`;
+  try {
+    await axios.post(url, body);
+    return;
+  } catch (error) {
+    console.log(error);
+    throw new Error(
+      `Something went wrong when posting data - ${error} - ${error.response.data}`
+    );
+  }
+};
