@@ -2,12 +2,17 @@ import "@testing-library/jest-dom";
 import { describe, expect, it, beforeEach } from "vitest";
 import { render, screen, waitFor } from "@testing-library/react";
 import { IProduct } from "../../Models/IProduct";
+import { MemoryRouter } from "react-router-dom";
 
 import ProductList from "./ProductList";
 
 describe("Product list component", () => {
   beforeEach(() => {
-    render(<ProductList products={testData} />);
+    render(
+      <MemoryRouter>
+        <ProductList products={testData} />;
+      </MemoryRouter>
+    );
   });
   it("should render a list with at least 2 items", async () => {
     const list = await screen.findByRole("list");
