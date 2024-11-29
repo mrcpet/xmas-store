@@ -1,8 +1,14 @@
 import { NavLink } from "react-router-dom";
 import { IProduct } from "../../Models/IProduct";
 import styled from "styled-components";
+import RemoveButton from "../RemoveButton/RemoveButton";
 
-const ProductList = ({ products }: { products: IProduct[] }) => {
+type ProductListProps = {
+  products: IProduct[];
+  cartItem: boolean;
+};
+
+const ProductList = ({ products, cartItem }: ProductListProps) => {
   return (
     <StyledList>
       {products.map((product) => (
@@ -16,6 +22,7 @@ const ProductList = ({ products }: { products: IProduct[] }) => {
           </NavLink>
           <h2>{product.title}</h2>
           <p>Price: ${product.price}</p>
+          {cartItem && <RemoveButton id={product.id} />}
         </li>
       ))}
     </StyledList>

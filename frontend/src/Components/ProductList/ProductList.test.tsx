@@ -10,7 +10,7 @@ describe("Product list component", () => {
   beforeEach(() => {
     render(
       <MemoryRouter>
-        <ProductList products={testData} />;
+        <ProductList products={testData} cartItem={false} />;
       </MemoryRouter>
     );
   });

@@ -228,22 +228,10 @@
   ],
   "cart": [
     {
-      "id": "6",
-      "title": "Snowflake Window Clings",
-      "image": "http://localhost:5020/img/6.jpg",
-      "price": 9.99
-    },
-    {
-      "id": "2",
-      "title": "LED String Lights (Warm White, 50ft)",
-      "image": "http://localhost:5020/img/2.jpg",
-      "price": 29.99
-    },
-    {
-      "id": "1",
-      "title": "Red Christmas Ornaments (Set of 24)",
-      "image": "http://localhost:5020/img/1.jpg",
-      "price": 19.99
+      "id": "22",
+      "title": "Holiday Scented Candles (Set of 3)",
+      "image": "http://localhost:5020/img/22.jpg",
+      "price": 18.99
     }
   ]
 }

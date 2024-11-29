@@ -3,6 +3,7 @@ import { IProduct } from "../Models/IProduct";
 import ProductList from "../Components/ProductList/ProductList";
 import { LoadData } from "../Utilities/LoadData";
 
+//TODO refactor into a cart component that is instanced here
 const CartPage = () => {
   const [products, setProducts] = useState<IProduct[]>();
 
@@ -14,6 +15,6 @@ const CartPage = () => {
     getProducts();
   }, []);
 
-  return <>{products && <ProductList products={products} />}</>;
+  return <>{products && <ProductList products={products} cartItem={true} />}</>;
 };
 export default CartPage;

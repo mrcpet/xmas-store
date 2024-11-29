@@ -14,6 +14,6 @@ const ProductsPage = () => {
     getProducts();
   }, []);
 
-  return <>{products && <ProductList products={products} />}</>;
+  return <>{products && <ProductList products={products} cartItem={false} />}</>;
 };
 export default ProductsPage;

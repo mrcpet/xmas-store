@@ -1,5 +1,5 @@
 import { ProductsModel } from "../models/ProductsModel.mjs";
-import { fetchData, postData } from "../utilities/httpClient.mjs";
+import { deleteData, fetchData, postData } from "../utilities/httpClient.mjs";
 
 export const listCart = async (req, res) => {
   const items = [];
@@ -17,7 +17,6 @@ export const listCart = async (req, res) => {
 };
 
 export const addProduct = async (req, res) => {
-  //get body from frontend, use id,
   const body = req.body;
   console.log("REQUEST BODY:", body);
   try {
@@ -26,7 +25,20 @@ export const addProduct = async (req, res) => {
     res.status(201).json({ success: true, data: item });
     return;
   } catch (error) {
-      console.log("ERROR", error)
+    console.log("ERROR", error);
+    res.status(500).json({ success: false, message: error });
+  }
+};
+
+export const deleteProduct = async (req, res) => {
+  const params = req.params;
+  console.log("DELETE PARAMS", params);
+  console.log("delete id", params.id);
+  try {
+    await deleteData("cart", params.id);
+    res.status(204).json({ success: true });
+    return;
+  } catch (error) {
     res.status(500).json({ success: false, message: error });
   }
 };

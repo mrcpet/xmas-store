@@ -1,7 +1,11 @@
 import { IProductDetails } from "../../Models/IProductDetails";
 import AddToCartButton from "../AddToCartButton/AddToCartButton";
 
-const ProductDetails = ({ product }: { product: IProductDetails }) => {
+type ProductDetailsProps = {
+  product: IProductDetails;
+};
+
+const ProductDetails = ({ product }: ProductDetailsProps) => {
   return (
     <>
       <img style={{ width: "400px" }} src={product.image} alt={product.title} />

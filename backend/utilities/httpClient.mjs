@@ -27,3 +27,17 @@ export const postData = async (endpoint, body) => {
     );
   }
 };
+
+export const deleteData = async (endpoint, id) => {
+  let url = `${process.env.BASE_URL}/${endpoint}/${id}`;
+  console.log(url);
+  try {
+    await axios.delete(url);
+    return;
+  } catch (error) {
+    console.log(error);
+    throw new Error(
+      `Something went wrong when trying to delete data - ${error} - ${error.response.data}`
+    );
+  }
+};
