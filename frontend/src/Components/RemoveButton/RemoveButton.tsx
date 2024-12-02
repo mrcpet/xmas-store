@@ -1,4 +1,4 @@
-import axios from "axios";
+import { removeFromCart } from "../../Utilities/CartUtilities";
 
 type RemoveButtonProps = {
   id: number;
@@ -6,7 +6,7 @@ type RemoveButtonProps = {
 
 const RemoveButton = ({ id }: RemoveButtonProps) => {
   const handleRemoveItem = async (): Promise<void> => {
-    await axios.delete(`http://localhost:5001/api/cart/${id}`);
+    await removeFromCart(id)
     console.log("REMOVED FROM CART:", id);
   };
   return <button onClick={handleRemoveItem}>Remove from cart</button>;

@@ -1,5 +1,5 @@
 import { IProductDetails } from "../../Models/IProductDetails";
-import axios from "axios";
+import { addToCart } from "../../Utilities/CartUtilities";
 
 type AddToCartButtonProps = {
   product: IProductDetails;
@@ -7,7 +7,7 @@ type AddToCartButtonProps = {
 
 const AddToCartButton = ({ product }: AddToCartButtonProps) => {
   const handleAddToCart = async (): Promise<void> => {
-    await axios.post("http://localhost:5001/api/cart", product);
+    await addToCart(product)
     console.log("ADDED TO CART:", product);
   };
   return <button onClick={handleAddToCart}>Add to cart</button>;

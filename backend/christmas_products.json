@@ -228,10 +228,10 @@
   ],
   "cart": [
     {
-      "id": "22",
-      "title": "Holiday Scented Candles (Set of 3)",
-      "image": "http://localhost:5020/img/22.jpg",
-      "price": 18.99
+      "id": "2",
+      "title": "LED String Lights (Warm White, 50ft)",
+      "image": "http://localhost:5020/img/2.jpg",
+      "price": 29.99
     }
   ]
 }
