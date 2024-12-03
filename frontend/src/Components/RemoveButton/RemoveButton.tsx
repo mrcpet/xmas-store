@@ -1,14 +1,9 @@
-import { removeFromCart } from "../../Utilities/CartUtilities";
-
 type RemoveButtonProps = {
   id: number;
+  handleRemoveItem: (id: number) => void;
 };
 
-const RemoveButton = ({ id }: RemoveButtonProps) => {
-  const handleRemoveItem = async (): Promise<void> => {
-    await removeFromCart(id)
-    console.log("REMOVED FROM CART:", id);
-  };
-  return <button onClick={handleRemoveItem}>Remove from cart</button>;
+const RemoveButton = ({ handleRemoveItem, id }: RemoveButtonProps) => {
+  return <button onClick={() => handleRemoveItem(id)}>Remove from cart</button>;
 };
 export default RemoveButton;

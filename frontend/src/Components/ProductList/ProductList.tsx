@@ -6,15 +6,21 @@ import ProductCard from "../ProductCard/ProductCard";
 type ProductListProps = {
   products: IProduct[];
   cartItem: boolean;
+  handleRemove?: (id: number) => void;
 };
 
-function ProductList({ products, cartItem }: ProductListProps) {
+function ProductList({ products, cartItem, handleRemove }: ProductListProps) {
   return (
     <StyledList>
       {products.map((product) => (
         <li key={product.id}>
           <ProductCard product={product} />
-          {cartItem && <RemoveButton id={product.id} />}
+          {cartItem && handleRemove && (
+            <RemoveButton
+              id={product.id}
+              handleRemoveItem={() => handleRemove(product.id)}
+            />
+          )}
         </li>
       ))}
     </StyledList>

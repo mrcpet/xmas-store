@@ -226,12 +226,5 @@
       "description": "Dinnerware with festive holiday designs for your table."
     }
   ],
-  "cart": [
-    {
-      "id": "2",
-      "title": "LED String Lights (Warm White, 50ft)",
-      "image": "http://localhost:5020/img/2.jpg",
-      "price": 29.99
-    }
-  ]
+  "cart": []
 }
