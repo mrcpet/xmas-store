@@ -29,7 +29,28 @@ function ProductList({ products, cartItem, handleRemove }: ProductListProps) {
 export default ProductList;
 
 const StyledList = styled.ul`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  justify-items: center;
+  padding-bottom: 2rem; /* Space for the last row of items */
+
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff; /* Light background for list items */
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Soft shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+  }
 `;

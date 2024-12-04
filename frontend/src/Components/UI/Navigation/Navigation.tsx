@@ -31,4 +31,18 @@ const StyledNavList = styled.ul`
   display: flex;
   justify-content: flex-end;
   gap: 1rem;
+  list-style: none;
+  padding: 0;
+  a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #2d3a31; /* Dark green */
+    font-family: "Poppins", sans-serif;
+    transition: color 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+      color: #f5a623; /* Warm orange for hover */
+      transform: scale(1.05); /* Slight scale effect on hover */
+    }
+  }
 `;

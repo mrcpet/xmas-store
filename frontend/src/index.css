@@ -1,4 +1,7 @@
-ul {
-    list-style: none;
-    padding: 0;
+body {
+  background-image: url("src/assets/wallpaper.jpg");
+  background-size: cover; /* Ensures the image covers the whole screen */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
 }

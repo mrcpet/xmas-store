@@ -1,26 +1,48 @@
+import styled from "styled-components";
+
 const HomePage = () => {
   return (
-    <div>
+    <StyledHomePage>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eveniet
-        blanditiis beatae recusandae doloremque repellat accusamus perspiciatis
-        obcaecati veniam harum optio praesentium, in cumque quae ea porro facere
-        saepe illo? At consequuntur nemo nobis consequatur! Doloribus neque
-        ipsum reprehenderit at ea aspernatur fugit dolorum temporibus odio a
-        iure exercitationem, earum, provident veritatis, ullam quia. Minus
-        labore est ipsum aut voluptates! Placeat animi recusandae voluptatem
-        sequi tenetur neque eaque consectetur quaerat, libero tempore ut
-        reprehenderit velit sed saepe! Ea expedita repudiandae, sit rerum iusto
-        eligendi odit aliquid mollitia amet iste aperiam! Excepturi voluptatem
-        eaque facilis numquam laborum illo temporibus odio optio tenetur porro
-        consequuntur, quisquam, facere est. Expedita esse saepe in sunt
-        doloremque dolorum temporibus, quisquam nihil impedit, veniam id
-        incidunt. Beatae, pariatur? Quasi perferendis non eos? Placeat iure
-        perferendis quis pariatur officia quia ea fuga provident, voluptas
-        temporibus consequuntur voluptatem repellat laudantium, id saepe vitae
-        explicabo? Facilis magnam sequi delectus!
+        Welcome to Frost & Fir, your one-stop destination for premium Christmas
+        decorations and holiday essentials! We bring the magic of the season to
+        your home with a wide selection of festive items, from elegant ornaments
+        to enchanting tree toppers. Whether you’re decking the halls or finding
+        the perfect gift, our carefully curated collection is designed to add
+        warmth and joy to your celebrations. Let us help you create memories
+        this holiday season with timeless pieces that evoke the spirit of
+        Christmas. Explore our shop and find everything you need to make your
+        holidays truly special!
       </p>
-    </div>
+    </StyledHomePage>
   );
 };
 export default HomePage;
+
+const StyledHomePage = styled.div`
+  padding: 2rem;
+  background-color: #f9f9f9;
+  color: #3e3e3e;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  line-height: 1.6;
+  box-sizing: border-box;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+
+  p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+    border-radius: 10px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+    p {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+  }
+`;
