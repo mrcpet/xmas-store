@@ -37,7 +37,6 @@ const StyledNavList = styled.ul`
     font-size: 1.5rem;
     text-decoration: none;
     color: #2d3a31; /* Dark green */
-    font-family: "Poppins", sans-serif;
     transition: color 0.3s ease, transform 0.3s ease;
 
     &:hover {

@@ -10,7 +10,7 @@ type ImageLinkProps = {
 const ImageLink = ({ id, src, alt }: ImageLinkProps) => {
   return (
     <StyledImageLink to={`/products/${id}`}>
-      <img style={{ width: "300px" }} src={src} alt={alt} />
+      <img src={src} alt={alt} />
     </StyledImageLink>
   );
 };

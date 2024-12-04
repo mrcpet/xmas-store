@@ -1,4 +1,4 @@
-export const allowedOrigins = ["http://localhost:3001"];
+export const allowedOrigins = ["http://localhost:3000"];
 
 export const corsOptions = {
   origin: (origin, callback) => {

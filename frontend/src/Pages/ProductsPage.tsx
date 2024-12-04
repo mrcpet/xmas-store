@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { IProduct } from "../Models/IProduct";
 import ProductList from "../Components/ProductList/ProductList";
 import { LoadData } from "../Utilities/LoadData";
+import Heading from "../Components/UI/Heading/Heading";
 
 const ProductsPage = () => {
   const [products, setProducts] = useState<IProduct[]>();
@@ -15,7 +16,12 @@ const ProductsPage = () => {
     getProducts();
   }, []);
 
-  return <StyledProductsPage>{products && <ProductList products={products} cartItem={false} />}</StyledProductsPage>;
+  return (
+    <StyledProductsPage>
+      <Heading text="Products" />
+      {products && <ProductList products={products} cartItem={false} />}
+    </StyledProductsPage>
+  );
 };
 export default ProductsPage;
 

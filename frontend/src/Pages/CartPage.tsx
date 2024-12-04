@@ -1,9 +1,11 @@
 import Cart from "../Components/Cart/Cart";
 import styled from "styled-components";
+import Heading from "../Components/UI/Heading/Heading";
 
 const CartPage = () => {
   return (
     <StyledCartPage>
+      <Heading text="Cart" />
       <Cart />
     </StyledCartPage>
   );

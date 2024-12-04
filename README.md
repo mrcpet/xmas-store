@@ -17,7 +17,7 @@ BASE_URL=http://localhost:5020
 
 ## frontend:
 
-React, port 3001
+React, port 3000
 
 ### .env
 
