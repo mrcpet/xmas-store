@@ -226,24 +226,5 @@
       "description": "Dinnerware with festive holiday designs for your table."
     }
   ],
-  "cart": [
-    {
-      "id": "11",
-      "title": "Christmas Tree Skirt (Red and White)",
-      "image": "http://localhost:5020/img/11.jpg",
-      "price": 12.99
-    },
-    {
-      "id": "1",
-      "title": "Red Christmas Ornaments (Set of 24)",
-      "image": "http://localhost:5020/img/1.jpg",
-      "price": 19.99
-    },
-    {
-      "id": "14",
-      "title": "Christmas Garland with Lights (9ft)",
-      "image": "http://localhost:5020/img/14.jpg",
-      "price": 34.99
-    }
-  ]
+  "cart": []
 }

@@ -36,12 +36,16 @@ const StyledNavList = styled.ul`
   a {
     font-size: 1.5rem;
     text-decoration: none;
-    color: #2d3a31; /* Dark green */
+    color: #2d3a31;
+    border: 2px solid #2d3a31;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
     transition: color 0.3s ease, transform 0.3s ease;
 
     &:hover {
-      color: #f5a623; /* Warm orange for hover */
-      transform: scale(1.05); /* Slight scale effect on hover */
+      color: #f5a623;
+      border: 2px solid #f5a623;
+      transform: scale(1.05);
     }
   }
 `;

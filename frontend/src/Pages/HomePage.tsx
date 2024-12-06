@@ -27,15 +27,11 @@ const StyledHomePage = styled.div`
   color: #3e3e3e;
   text-align: left;
   line-height: 1.6;
-  box-sizing: border-box;
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
   img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
-    /* border-radius: 10px; */
     border: 0.25rem solid #031d0b;
     opacity: 0.8;
   }

@@ -36,20 +36,20 @@ const StyledList = styled.ul`
   padding: 0;
   margin: 0;
   justify-items: center;
-  padding-bottom: 2rem; /* Space for the last row of items */
+  padding-bottom: 2rem;
 
   li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #fff; /* Light background for list items */
+    background-color: #fff;
     padding: 1rem;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Soft shadow */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 
     &:hover {
-      transform: translateY(-5px);
+      transform: translateY(-2px);
       box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
     }
   }

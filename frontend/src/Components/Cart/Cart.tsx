@@ -13,7 +13,6 @@ const Cart = () => {
 
   const handleRemoveItem = async (id: number): Promise<void> => {
     await removeFromCart(id);
-    console.log("REMOVED FROM CART:", id);
     setProducts((prevProducts) =>
       prevProducts ? prevProducts.filter((product) => product.id !== id) : []
     );

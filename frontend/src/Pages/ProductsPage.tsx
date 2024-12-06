@@ -27,8 +27,7 @@ export default ProductsPage;
 
 const StyledProductsPage = styled.div`
   padding: 2rem;
-  background-color: #f0f0f0; /* Light gray background */
-  min-height: 100vh; /* Full height */
-  width: 100%; /* Ensures the container uses full width */
-  box-sizing: border-box;
+  background-color: #f0f0f0;
+  min-height: 100vh;
+  width: 100%; 
 `;

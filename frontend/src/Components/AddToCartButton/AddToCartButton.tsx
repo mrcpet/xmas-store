@@ -9,7 +9,6 @@ type AddToCartButtonProps = {
 const AddToCartButton = ({ product }: AddToCartButtonProps) => {
   const handleAddToCart = async (): Promise<void> => {
     await addToCart(product);
-    console.log("ADDED TO CART:", product);
   };
   return (
     <StyledAddToCartButton onClick={handleAddToCart}>
@@ -20,18 +19,18 @@ const AddToCartButton = ({ product }: AddToCartButtonProps) => {
 export default AddToCartButton;
 
 const StyledAddToCartButton = styled.button`
-  background-color: #2a7070; /* Frosty teal */
-  color: #fff; /* Snowy white */
+  background-color: #2a7070; 
+  color: #fff; 
   font-size: 1rem;
   padding: 0.75rem 1.5rem;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 
   &:hover {
-    background-color: #1f5a5a; /* Darker teal for hover */
+    background-color: #1f5a5a;
     transform: scale(1.05);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
   }

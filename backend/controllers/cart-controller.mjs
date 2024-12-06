@@ -18,7 +18,6 @@ export const listCart = async (req, res) => {
 
 export const addProduct = async (req, res) => {
   const body = req.body;
-  console.log("REQUEST BODY:", body);
   try {
     let item = new ProductsModel(body.id, body.title, body.image, body.price);
     await postData("cart", item);
@@ -32,8 +31,6 @@ export const addProduct = async (req, res) => {
 
 export const deleteProduct = async (req, res) => {
   const params = req.params;
-  console.log("DELETE PARAMS", params);
-  console.log("delete id", params.id);
   try {
     await deleteData("cart", params.id);
     res.status(204).json({ success: true });

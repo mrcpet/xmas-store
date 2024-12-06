@@ -16,9 +16,9 @@ const StyledHeader = styled.header`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f0f0f0; /* Light gray background */
-  border-bottom: 0.25rem solid #031d0b;
-  padding-bottom: 1rem;
+  background-color: #f0f0f0; 
+  border-bottom: 0.15rem solid #031d0b;
+  padding-bottom: 2rem;
   @media (max-width: 768px) {
     padding: 1.5rem 0;
     h1 {

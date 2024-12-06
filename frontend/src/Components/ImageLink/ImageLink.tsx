@@ -22,7 +22,7 @@ const StyledImageLink = styled(NavLink)`
   height: auto;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
@@ -33,7 +33,7 @@ const StyledImageLink = styled(NavLink)`
   img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image covers the area */
+    object-fit: cover;
     border-radius: 10px;
   }
 `;

@@ -17,7 +17,7 @@ const ProductDetails = ({ product }: ProductDetailsProps) => {
       {product.quantity > 0 ? (
         <AddToCartButton product={product} />
       ) : (
-        <p>Currently unavailable</p>
+        <p className="unavailable">Currently unavailable</p>
       )}
     </StyledProductDetails>
   );
@@ -29,14 +29,10 @@ const StyledProductDetails = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  background-color: #f8f8f8;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
-  box-sizing: border-box;
-
   img {
     width: 100%;
     max-width: 400px;

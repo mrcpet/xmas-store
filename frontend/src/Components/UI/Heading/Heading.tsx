@@ -7,7 +7,7 @@ export default Heading;
 
 const StyledHeading = styled.h1`
     font-size: 2rem;
-    color: #2d3a31; /* Dark green */
+    color: #2d3a31;
     padding: 1rem 0;
     text-align: center;
 
